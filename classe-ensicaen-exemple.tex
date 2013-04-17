@@ -1,0 +1,55 @@
+\documentclass[times]{rapport-ensi}
+\titre{Utilisation de la classe rapport-ensi}
+\soustitre{Mon sous titre}
+\specialite{Électronique et physique appliqué}
+\annee{2\ieme}
+\nomentreprise{ENSICAEN}
+\adresseentreprise{6, bd Maréchal Juin \newline F - 14050 Caen Cedex 4}
+\nom{Jean-Baptiste TH\'EOU}
+\imageannee{img/imageannee-2010-2011.jpg}
+\setlength{\widthentreprise}{5cm}
+\logoentreprise{img/logoecole}
+\logoecole{img/logoecole}
+\docpdf
+
+
+\begin{document}
+ \fairetitre
+ \tableofcontents
+\chapter*{Introduction}
+L'introduction est appelée à l'aide de la fonction chapter*
+\chapter{Utilisation de la classe}
+Pour utiliser cette classe, il suffit de copier rapport-ensi.cls dans le dossier contenant votre source .tex. 
+Elle est inspirée des modèles pour Openoffice et Word, donnés pour la filière informatique (Disponible sur l'intranet
+de l'ENSICAEN).
+
+\section{Les différentes options}
+Les différentes options\footnote{A définir avant le begin\{document\}} de cette classe sont :
+\begin{itemize}
+\item titre : Le titre du rapport (Ici \og{}Utilisation de la classe rapport-ensi\fg{} )
+\item soustitre : Le sous titre du rapport (Ici \og{}Mon sous titre\fg{} )
+\item specialite : Votre spécialité (Ici \og{}Électronique et physique appliquée\fg{} )
+\item annee : Votre année (Ici \og{}2\ieme\fg{} )
+\item nom : Votre nom :)
+\item imageannee : L'image qui se trouve en bas de page
+\item nomentreprise : Le nom de l'entreprise dans laquelle vous effectuez votre stage
+\item adresseentreprise : L'adresse de l'entreprise\footnote{Pour avoir un retour à la ligne, utiliser la commande \newline}
+\item logoentreprise : Le logo de votre entreprise
+\item widthentreprise : Taille du logo entreprise (La largeur). A adapter au logo. Il faut la définir avec setlength
+\end{itemize}
+Il y a 3 autres options que normalement vous n'avez pas à modifier
+\begin{itemize}
+\item logoecole : Le logo de l'école (Par défaut, il s'appelle logoecole.jpg)
+\item widthecole : La taille du logo. Ici la largeur est de 5 cm avec le logo fourni
+\item adresseecole : L'adresse de l'école.
+\item type : Le type de document. Par défaut, un rapport de stage.
+\end{itemize}
+\subsection{Option de classe}
+Pour la classe rapport-ensi, il existe une option : times. 
+Si vous mettez l'option times, c'est la police times qui est utilisée. 
+Si vous souhaitez utiliser une police qui vous est propre, 
+ou utiliser la police par défaut de la classe report, ne pas utiliser cette option. Dans cette exemple, l'option times est active.
+\end{document}
+
+ 
+\end{document}
